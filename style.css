@@ -1,0 +1,165 @@
+/* --- Styles de base --- */
+body {
+  font-family: "Baloo 2", sans-serif;
+  margin: 0;
+  color: #333;
+  background-color: #ffffff;
+  padding-top: 100px; /* espace pour le header fixe */
+}
+
+/* --- Header --- */
+header {
+  position: relative;
+  width: 100%;
+  background-color: #0f546d;
+  color: white;
+  text-align: center;
+  padding: 0.8rem 0 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* --- Titre des sections --- */
+section h2 {
+  color: #0f546d;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/*--- Couleur des prix ---*/
+.prix {
+    color: #0f546d
+}
+
+/* Logo positionné à gauche */
+.header-logo {
+  position: absolute;
+  left: 1.5rem;            /* distance depuis le bord gauche */
+  top: 50%;                 /* centré verticalement par rapport au header */
+  transform: translateY(-50%);
+  height: 150px;             /* ajuste la taille du logo */
+  width: auto;
+}
+
+/* Titre principal */
+header h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 2.4rem;
+  margin: 0;
+  color: white;
+  display: inline-block; /* pour que le sous-titre s’aligne sur sa largeur */
+}
+
+/* Sous-titre */
+header h2 {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.2rem;
+  margin: 0rem 0 0.5rem; /* rapproche le sous-titre du titre */
+  color: #d7f6ee; /* vert d’eau clair */
+  display: inline-block;
+  width: 100%;
+  letter-spacing: 3px; /* ✅ espace entre les lettres */
+  position: relative /* pour placer la ligne en dessous*/
+}
+
+/* la petite ligne décorative */
+header h2::after {
+  content: "";
+  display: block;
+  width: 35%;          /* un peu plus large que le texte */
+  height: 2px;          /* épaisseur de la ligne */
+  background-color: #d7f6ee; /* même teinte que le texte */
+  margin: 0.3rem auto 0; /* espace au-dessus et centrage */
+  border-radius: 2px;   /* bords légèrement arrondis */
+}
+
+/* Menu de navigation */
+nav {
+  margin-top: 0.3rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- Accueil ---*/
+.accueil {
+    text-align: center;
+}
+
+/* --- Contenu --- */
+.content {
+  padding: 2rem;
+  text-align: center;
+}
+
+#services {
+    margin-top: 0;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 1rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.separator {
+  text-align: center;
+  margin-top: 0.2rem ;
+  margin-bottom: 0.2rem;
+}
+
+.separator img {
+  height: 120px;  /* adapte à la taille voulue */
+  opacity: 0.7;
+}
+
+/* Réduction précise de l’espace avant la section Services */
+#services {
+  margin-top: 0; /* supprime l’espace avant la section */
+  padding-top: 0; /* au cas où il y a du padding */
+}
+
+#services h2 {
+  margin-top: 0; /* supprime la marge haute du titre */
+}
+
+/* Réduction précise de l’espace avant la section Contact */
+#contact {
+  margin-top: 0; /* supprime l’espace avant la section */
+  padding-top: 0; /* au cas où il y a du padding */
+}
+
+#contact h2 {
+  margin-top: 0; /* supprime la marge haute du titre */
+}
